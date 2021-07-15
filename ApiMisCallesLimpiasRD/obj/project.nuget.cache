@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qIBhdC6VfdxhKuH4AiFl7nUvlSdowXUzdJFNBOxytwB9MWBbz+GeNsNZlt/6P+19tK8EHH91NdumId832azyOQ==",
+  "dgSpecHash": "yrsjQCUTPIUVLVlkz373b+W1T1tlg1/JQUga2H4UsMuXR6Z6AIQ5tqDXrUQ19Zer5DvkRWsaVtwnSes0id+Chw==",
   "success": true,
-  "projectFilePath": "D:\\Git_CFG\\AppMisCallesLimpiasRD\\MisCallesLimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
+  "projectFilePath": "C:\\Users\\bremo\\Desktop\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bremo\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\bremo\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",
