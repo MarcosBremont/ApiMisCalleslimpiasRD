@@ -17,7 +17,7 @@ using System.Web.Http.Cors;
 
 namespace ApiMisCallesLimpiasRD.Controllers
 {
-  [EnableCors(origins: "http://api.miscalleslimpiasrd.tecnolora.com/", headers: "*", methods: "*")]
+  [System.Web.Http.Cors.EnableCors(origins: "http://api.miscalleslimpiasrd.tecnolora.com/", headers: "*", methods: "*")]
   [Route("api/[controller]")]
   [ApiController]
   public class MisCallesLimpiasRDController
@@ -260,7 +260,7 @@ namespace ApiMisCallesLimpiasRD.Controllers
     }
 
 
-
+        //Hola
     //Consultar los recibos por ID de usuario
     [HttpGet("consultarrecibosporid/{cod_usuario}")]
     public ActionResult<IEnumerable<Models.Entidad.EConsultarRecibos>> consultaRecibo(int cod_usuario)
