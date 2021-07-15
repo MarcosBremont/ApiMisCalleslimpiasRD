@@ -56,7 +56,7 @@ namespace ApiMisCallesLimpiasRD.Controllers
     //    return ex.Message;
     //  }
     //}
-
+    //Holaaaa
     [HttpGet("RegistrarUsuario/{usuario}/{correo_Usuario}/{cedula_usuario}/{clave}/{telefono_Usuario}")]
     public ActionResult<Models.Entidad.Eusuario> RegistrarUsuario(
         string usuario,
