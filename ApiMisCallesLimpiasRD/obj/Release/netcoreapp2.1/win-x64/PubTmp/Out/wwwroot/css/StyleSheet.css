@@ -1,0 +1,21 @@
+body {
+  background-image: url('/images/MegaTron.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+centrarlabel {
+  display: block;
+  text-align: center;
+  line-height: 150%;
+  font-size: .85em;
+}
+
+.textAlign {
+  text-align: center;
+}
+
+.alignCenter {
+  margin: 0 auto;
+}
