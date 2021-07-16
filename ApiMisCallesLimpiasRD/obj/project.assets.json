@@ -12761,11 +12761,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bremo\\Desktop\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
+      "projectUniqueName": "C:\\Users\\bremo\\Desktop\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
       "projectName": "ApiMisCallesLimpiasRD",
-      "projectPath": "C:\\Users\\bremo\\Desktop\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
+      "projectPath": "C:\\Users\\bremo\\Desktop\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
       "packagesPath": "C:\\Users\\bremo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bremo\\Desktop\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD\\obj\\",
+      "outputPath": "C:\\Users\\bremo\\Desktop\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
