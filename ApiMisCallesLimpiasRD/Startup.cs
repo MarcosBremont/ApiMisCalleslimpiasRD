@@ -14,11 +14,11 @@ namespace ApiMisCallesLimpiasRD
 {
     public class Startup
     {
-        public static string ApplicationPath    { get; internal set; }
-    readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+        public static string ApplicationPath { get; internal set; }
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 
-    public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
@@ -29,22 +29,19 @@ namespace ApiMisCallesLimpiasRD
         public void ConfigureServices(IServiceCollection services)
         {
 
-      //services.AddCors(c =>
-      //{
-      //    c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
-      //});
-      services.AddCors(options =>
-      {
-        options.AddPolicy(name: MyAllowSpecificOrigins,
-                          builder =>
-                          {
-                            builder.WithOrigins("http://api.miscalleslimpiasrd.tecnolora.com/",
-                                                    "http://api.miscalleslimpiasrd.tecnolora.com");
-                          });
-      });
-      services.AddMvc();
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    builder =>
+                    {
+                        builder.WithOrigins("https://localhost:44351", "http://localhost:4200")
+                                            .AllowAnyHeader()
+                                            .AllowAnyMethod();
+                    });
+            });
+            services.AddMvc();
             services.AddLocalization(options => options.ResourcesPath = "Resources");
-            
+
             services.AddMvc()
               .AddViewLocalization()
               .AddDataAnnotationsLocalization();
@@ -67,8 +64,16 @@ namespace ApiMisCallesLimpiasRD
         {
             ApplicationPath = env.ContentRootPath;
 
-      app.UseCors(MyAllowSpecificOrigins);
-      app.UseStaticFiles();
+         
+            app.UseCors(builder =>
+            {
+                builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+            });
+
+            app.UseStaticFiles();
 
             if (env.IsDevelopment())
             {

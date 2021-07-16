@@ -285,3 +285,4 @@ D:\Git_CFG\AppMisCallesLimpiasRD\MisCallesLimpiasRD\ApiMisCallesLimpiasRD\ApiMis
 D:\Git_CFG\AppMisCallesLimpiasRD\MisCallesLimpiasRD\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.Views.pdb
 D:\Git_CFG\AppMisCallesLimpiasRD\MisCallesLimpiasRD\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.genruntimeconfig.cache
 D:\Git_CFG\AppMisCallesLimpiasRD\MisCallesLimpiasRD\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.csproj.CopyComplete
+C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
