@@ -109,3 +109,40 @@ C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\n
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.pdb
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.genruntimeconfig.cache
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.csproj.CopyComplete
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\bin\Release\netcoreapp2.1\win-x64\appsettings.Development.json
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\bin\Release\netcoreapp2.1\win-x64\appsettings.json
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\bin\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.exe
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\bin\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.deps.json
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\bin\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.runtimeconfig.json
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\bin\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.runtimeconfig.dev.json
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\bin\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.dll
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\bin\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.pdb
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\bin\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.Views.dll
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\bin\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.Views.pdb
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.csprojAssemblyReference.cache
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.AssemblyInfoInputs.cache
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.AssemblyInfo.cs
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.csproj.CoreCompileInputs.cache
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.RazorAssemblyInfo.cache
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.RazorAssemblyInfo.cs
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\UserSecretsAssemblyInfo.cs
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.TagHelpers.input.cache
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.TagHelpers.output.cache
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.RazorCoreGenerate.cache
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.RazorTargetAssemblyInfo.cache
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.RazorTargetAssemblyInfo.cs
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.Views.pdb
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.dll
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.pdb
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.genruntimeconfig.cache
+C:\Users\Marcos Bremont\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\ApiMisCallesLimpiasRD.csproj.CopyComplete
