@@ -152,12 +152,13 @@ namespace ApiMisCallesLimpiasRD.Models
                         NullValueHandling = NullValueHandling.Ignore
                     });
 
-                    usuarios.respuesta = "NO";
+                    usuarios.respuesta = "OK";
                     usuarios.mensaje = "¡Ya existe ese correo electronico!";
                 }
                 else
                 {
-                    usuarios.respuesta = "OK";
+                    usuarios.respuesta = "NO";
+                    usuarios.mensaje = "¡Ese correo no existe!";
                 }
             }
             catch (Exception ex)
