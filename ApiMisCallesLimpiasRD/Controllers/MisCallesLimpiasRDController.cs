@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Cors;
 using ApiMisCallesLimpiasRD.Models.Entidad;
 using MySqlX.XDevAPI.Common;
 using System.Web.Http.Cors;
+using ApiMisCallesLimpiasRD.Servicios;
 
 namespace ApiMisCallesLimpiasRD.Controllers
 {
@@ -250,6 +251,16 @@ namespace ApiMisCallesLimpiasRD.Controllers
             List<Models.Entidad.EConsultarNivelUsuario> listado_nivel_usuario = consultaNecesaria.listado_nivel_usuario(cod_usuario);
             return CustomJsonResult(listado_nivel_usuario);
         }
+
+        [HttpGet]
+        [Route("enviarcorreo")]
+        public JsonResult EnviarCorreo(string email, string subject, string message)
+        {
+            new EnvioDeCorreos().Enviarcorreo(email, subject, message);
+
+            return new JsonResult("OK");
+        }
+
 
 
 
