@@ -17,7 +17,7 @@ namespace ApiMisCallesLimpiasRD.Servicios
                 var smtpClient = new SmtpClient("smtp.gmail.com")
                 {
                     Port = 587,
-                    Credentials = new NetworkCredential(from, "Marcosjb1"),
+                    Credentials = new NetworkCredential(from, "htlglzkypywoxhtm"),
                     EnableSsl = true,
                 };
                 MailMessage mailMessage = new MailMessage(from, email);

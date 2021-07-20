@@ -254,9 +254,16 @@ namespace ApiMisCallesLimpiasRD.Controllers
 
         [HttpGet]
         [Route("enviarcorreo")]
-        public JsonResult EnviarCorreo(string email, string subject, string message)
+        public IActionResult EnviarCorreo(string email, string subject, string message)
         {
-            new EnvioDeCorreos().Enviarcorreo(email, subject, message);
+            try
+            {
+                new EnvioDeCorreos().Enviarcorreo(email, subject, message);
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult(ex.ToString());
+            }
 
             return new JsonResult("OK");
         }
