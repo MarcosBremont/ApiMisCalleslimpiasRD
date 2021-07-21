@@ -225,14 +225,49 @@ namespace ApiMisCallesLimpiasRD.Controllers
         }
 
 
+        //[HttpPost("GuardarFotosOrden")]
+        //public string GuardarFotosOrden([FromBody] Emisreportes content)
+        //{
+        //    string msj = "true";
+
+        //    try
+        //    {
+        //        var response = new Misreportes().RegistrarReporte(content);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        msj = "Error:" + ex.Message;
+        //    }
+
+        //    return msj;
+        //}
+
         [HttpPost("GuardarFotosOrden")]
-        public string GuardarFotosOrden([FromBody] Emisreportes content)
+        public string GuardarFotosOrden([FromBody] string content)
         {
             string msj = "true";
 
             try
             {
-                var response = new Misreportes().RegistrarReporte(content);
+                List<string> lista_de_imagenes = Newtonsoft.Json.JsonConvert.DeserializeObject<List<string>>(content);
+                string carpetaOrden = "C:/Fotos"; 
+                string foto = "";
+                int secuencia = 1;
+
+                foto = carpetaOrden + 1 + ".jpg";
+                if (System.IO.File.Exists(foto))
+                    System.IO.File.Delete(foto);
+
+                //Crear la carpeta de imágenes si no existe
+                if (!System.IO.Directory.Exists(carpetaOrden))
+                   System.IO.Directory.CreateDirectory(carpetaOrden);
+
+                foreach (string foto_en_base64 in lista_de_imagenes)
+                {
+                    foto = carpetaOrden + "" + secuencia + ".jpg";
+                    System.IO.File.WriteAllBytes(foto, Convert.FromBase64String(foto_en_base64));
+                    secuencia++;
+                }
             }
             catch (Exception ex)
             {
