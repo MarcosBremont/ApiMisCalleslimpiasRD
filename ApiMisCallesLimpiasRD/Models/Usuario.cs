@@ -169,46 +169,85 @@ namespace ApiMisCallesLimpiasRD.Models
             return usuarios;
         }
 
-        public Eusuario UDatosPerfilUsuario(string usuario, string correo_Usuario, string cedula_usuario, string clave, string telefono_Usuario)
+        public Eusuario UDatosPerfilUsuario(Eusuario eusuario)
         {
-            Eusuario usuarios = new Eusuario();
             try
             {
                 DataTable dt = new DataTable();
                 MySqlCommand cmd = new MySqlCommand("UDatosPerfilUsuario", GetCon());
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("prm_usuario", MySqlDbType.String).Value = usuario;
-                cmd.Parameters.Add("prm_correo_Usuario", MySqlDbType.String).Value = correo_Usuario;
-                cmd.Parameters.Add("prm_cedula_usuario", MySqlDbType.String).Value = cedula_usuario;
-                cmd.Parameters.Add("prm_clave", MySqlDbType.String).Value = clave;
-                cmd.Parameters.Add("prm_telefono_Usuario", MySqlDbType.String).Value = telefono_Usuario;
+                cmd.Parameters.Add("prm_cod_usuario", MySqlDbType.Int32).Value = eusuario.cod_usuario;
+                cmd.Parameters.Add("prm_correo_Usuario", MySqlDbType.String).Value = eusuario.correo_Usuario;
+                cmd.Parameters.Add("prm_cedula_usuario", MySqlDbType.String).Value = eusuario.cedula_usuario;
+                cmd.Parameters.Add("prm_clave", MySqlDbType.String).Value = eusuario.clave;
+                cmd.Parameters.Add("prm_telefono_Usuario", MySqlDbType.String).Value = eusuario.telefono_Usuario;
+                cmd.Parameters.Add("prm_foto_usuario", MySqlDbType.String).Value = eusuario.foto_usuario;
                 MySqlDataAdapter da = new MySqlDataAdapter();
                 da.SelectCommand = cmd;
                 da.Fill(dt);
 
-                if (dt.Rows.Count > 0)
+                    if (dt.Rows.Count > 0)
                 {
                     var result = JsonConvert.SerializeObject(dt, Formatting.Indented).Replace("[", "").Replace("]", "");
-                    usuarios = JsonConvert.DeserializeObject<Eusuario>(result, new JsonSerializerSettings()
+                    eusuario = JsonConvert.DeserializeObject<Eusuario>(result, new JsonSerializerSettings()
                     {
                         NullValueHandling = NullValueHandling.Ignore
                     });
 
-                    usuarios.respuesta = "OK";
+                    eusuario.respuesta = "OK";
                 }
                 else
                 {
-                    usuarios.respuesta = "NO";
-                    usuarios.mensaje = "¡No se pudo cambiar la contraseña!";
+                    eusuario.respuesta = "NO";
+                    eusuario.mensaje = "¡No se pudo cambiar la contraseña!";
                 }
             }
             catch (Exception ex)
             {
-                usuarios.respuesta = "NO";
-                usuarios.mensaje = "Error. no se pudo realizar la tarea solicitada.";
+                eusuario.respuesta = "NO";
+                eusuario.mensaje = "Error. no se pudo realizar la tarea solicitada.";
             }
-            return usuarios;
+            return eusuario;
         }
+
+
+        //public Eusuario UDatosPerfilUsuario(string foto_usuario, int cod_usuario)
+        //{
+        //    Eusuario usuarios = new Eusuario();
+        //    try
+        //    {
+        //        DataTable dt = new DataTable();
+        //        MySqlCommand cmd = new MySqlCommand("UFotoPerfil", GetCon());
+        //        cmd.CommandType = CommandType.StoredProcedure;
+        //        cmd.Parameters.Add("prm_foto_usuario", MySqlDbType.String).Value = foto_usuario;
+        //        cmd.Parameters.Add("prm_cod_usuario", MySqlDbType.String).Value = cod_usuario;
+        //        MySqlDataAdapter da = new MySqlDataAdapter();
+        //        da.SelectCommand = cmd;
+        //        da.Fill(dt);
+
+        //        if (dt.Rows.Count > 0)
+        //        {
+        //            var result = JsonConvert.SerializeObject(dt, Formatting.Indented).Replace("[", "").Replace("]", "");
+        //            usuarios = JsonConvert.DeserializeObject<Eusuario>(result, new JsonSerializerSettings()
+        //            {
+        //                NullValueHandling = NullValueHandling.Ignore
+        //            });
+
+        //            usuarios.respuesta = "OK";
+        //        }
+        //        else
+        //        {
+        //            usuarios.respuesta = "NO";
+        //            usuarios.mensaje = "¡No se pudo cambiar la contraseña!";
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        usuarios.respuesta = "NO";
+        //        usuarios.mensaje = "Error. no se pudo realizar la tarea solicitada.";
+        //    }
+        //    return usuarios;
+        //}
 
 
 

@@ -13,6 +13,7 @@ namespace ApiMisCallesLimpiasRD.Models.Entidad
         public string cedula_usuario { get; set; } = "";
         public string clave { get; set; } = "";
         public string telefono_Usuario { get; set; } = "";
+        public string foto_usuario { get; set; } = "";
         public string respuesta { get; set; }
         public string mensaje { get; set; }
         public int estado { get; set; } = 1;

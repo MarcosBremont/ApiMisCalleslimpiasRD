@@ -3,6 +3,9 @@ C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\n
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\css\site.min.css
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\css\StyleSheet.css
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\favicon.ico
+C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\images\3b8bebd3-6199-4568-afdd-3eb512ccffcc.jpeg
+C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\images\47843adf-645a-4954-8a8a-1fab51766326.jpeg
+C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\images\5178c892-a258-486e-ab9f-aadeda87df94.jpeg
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\images\ApiBien.jpg
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\images\banner1.svg
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\images\banner2.svg
@@ -12,6 +15,7 @@ C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\n
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\images\giphy.gif
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\images\giphybc.gif
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\images\MegaTron.jpg
+C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\images\test.jpeg
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\js\site.js
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\js\site.min.js
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\wwwroot\lib\bootstrap\.bower.json
@@ -64,6 +68,7 @@ C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\n
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\MySql.Data.dll
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\Ubiety.Dns.Core.dll
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\Zstandard.Net.dll
+C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\SixLabors.ImageSharp.dll
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\Renci.SshNet.dll
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\SshNet.Security.Cryptography.dll
 C:\Users\bremo\Desktop\ApiMisCallesLimpiasRD\ApiMisCallesLimpiasRD\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\System.Configuration.ConfigurationManager.dll

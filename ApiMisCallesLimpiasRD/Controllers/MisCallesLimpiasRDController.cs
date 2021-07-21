@@ -15,6 +15,7 @@ using ApiMisCallesLimpiasRD.Models.Entidad;
 using MySqlX.XDevAPI.Common;
 using System.Web.Http.Cors;
 using ApiMisCallesLimpiasRD.Servicios;
+using SixLabors.ImageSharp;
 
 namespace ApiMisCallesLimpiasRD.Controllers
 {
@@ -170,11 +171,39 @@ namespace ApiMisCallesLimpiasRD.Controllers
 
         [HttpGet]
         [Route("UDatosPerfilUsuario")]
-        public JsonResult UDatosPerfilUsuario(string usuario, string correo_Usuario, string cedula_usuario, string clave, string telefono_Usuario)
+        public string UDatosPerfilUsuario(Eusuario content)
         {
-            Models.Usuario usuarios = new Models.Usuario();
-            var response = usuarios.UDatosPerfilUsuario(usuario, correo_Usuario, cedula_usuario, clave, telefono_Usuario);
-            return CustomJsonResult(response);
+
+            string msj = "true";
+
+            try
+            {
+                // grabar foto
+                try
+                {
+                    if (content.foto_usuario != "")
+                    {
+                        var imageName = $"/images/{Guid.NewGuid().ToString()}.jpeg";
+                        var bytes = Convert.FromBase64String(content.foto_usuario);
+                        var image = Image.Load(bytes);
+                        image.SaveAsJpeg(Path.GetFullPath($"wwwroot/{imageName}"));
+                        content.foto_usuario = imageName;
+                    }
+
+                }
+                catch (Exception)
+                {
+                }
+                var response = usuarios.UDatosPerfilUsuario(content);
+
+            }
+            catch (Exception ex)
+            {
+                msj = "Error:" + ex.Message;
+            }
+
+            return msj;
+
 
         }
 
@@ -198,8 +227,8 @@ namespace ApiMisCallesLimpiasRD.Controllers
             var response = recibo1.RegistrarRecibos(erecibo);
             return CustomJsonResult(response);
         }
-        
-        
+
+
         [HttpGet]
         [Route("consultarrecibosporid")]
 
@@ -212,7 +241,7 @@ namespace ApiMisCallesLimpiasRD.Controllers
 
         [HttpGet]
         [Route("RegistrarReporte")]
-        public JsonResult RegistrarReporte(string ubicacion, string lat, string lng, string fotos, int cod_usuario) 
+        public JsonResult RegistrarReporte(string ubicacion, string lat, string lng, string fotos, int cod_usuario)
         {
             emisreportes.ubicacion = ubicacion;
             emisreportes.lat = lat;
@@ -225,49 +254,31 @@ namespace ApiMisCallesLimpiasRD.Controllers
         }
 
 
-        //[HttpPost("GuardarFotosOrden")]
-        //public string GuardarFotosOrden([FromBody] Emisreportes content)
-        //{
-        //    string msj = "true";
-
-        //    try
-        //    {
-        //        var response = new Misreportes().RegistrarReporte(content);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        msj = "Error:" + ex.Message;
-        //    }
-
-        //    return msj;
-        //}
-
         [HttpPost("GuardarFotosOrden")]
-        public string GuardarFotosOrden([FromBody] string content)
+        public string GuardarFotosOrden([FromBody] Emisreportes content)
         {
             string msj = "true";
 
             try
             {
-                List<string> lista_de_imagenes = Newtonsoft.Json.JsonConvert.DeserializeObject<List<string>>(content);
-                string carpetaOrden = "C:/Fotos"; 
-                string foto = "";
-                int secuencia = 1;
-
-                foto = carpetaOrden + 1 + ".jpg";
-                if (System.IO.File.Exists(foto))
-                    System.IO.File.Delete(foto);
-
-                //Crear la carpeta de imágenes si no existe
-                if (!System.IO.Directory.Exists(carpetaOrden))
-                   System.IO.Directory.CreateDirectory(carpetaOrden);
-
-                foreach (string foto_en_base64 in lista_de_imagenes)
+                // grabar foto
+                try
                 {
-                    foto = carpetaOrden + "" + secuencia + ".jpg";
-                    System.IO.File.WriteAllBytes(foto, Convert.FromBase64String(foto_en_base64));
-                    secuencia++;
+                    if (content.fotos != "")
+                    {
+                        var imageName = $"/images/{Guid.NewGuid().ToString()}.jpeg";
+                        var bytes = Convert.FromBase64String(content.fotos);
+                        var image = Image.Load(bytes);
+                        image.SaveAsJpeg(Path.GetFullPath($"wwwroot/{imageName}"));
+                        content.fotos = imageName;
+                    }
+
                 }
+                catch (Exception)
+                {
+                }
+
+                var response = new Misreportes().RegistrarReporte(content);
             }
             catch (Exception ex)
             {
@@ -276,6 +287,7 @@ namespace ApiMisCallesLimpiasRD.Controllers
 
             return msj;
         }
+
 
         //Consultar los recibos por ID de usuario
         [HttpGet]
@@ -339,8 +351,60 @@ namespace ApiMisCallesLimpiasRD.Controllers
             return CustomJsonResult(lista_eliminar_reportes);
         }
 
+        //[HttpGet]
+        //[Route("UFotoPerfil")]
+        //public JsonResult UFotoPerfil(string foto_usuario, int cod_usuario)
+        //{
+        //    Models.Usuario usuarios = new Models.Usuario();
+        //    var response = usuarios.UDatosPerfilUsuario(foto_usuario, cod_usuario);
+        //    return CustomJsonResult(response);
+
+        //}
+
+        [HttpPost("UFotoPerfil")]
+        public string UFotoPerfil([FromBody] Eusuario content)
+        {
+            string msj = "true";
+
+            try
+            {
+                // grabar foto
+                try
+                {
+                    if (content.foto_usuario != "")
+                    {
+                        var imageName = $"/images/{Guid.NewGuid().ToString()}.jpeg";
+                        var bytes = Convert.FromBase64String(content.foto_usuario);
+                        var image = Image.Load(bytes);
+                        image.SaveAsJpeg(Path.GetFullPath($"wwwroot/{imageName}"));
+                        content.foto_usuario = imageName;
+                    }
+
+                }
+                catch (Exception)
+                {
+                }
+
+                var response = usuarios.UDatosPerfilUsuario(content);
+            }
+            catch (Exception ex)
+            {
+                msj = "Error:" + ex.Message;
+            }
+
+            return msj;
+        }
 
 
+        //[HttpGet]
+        //[Route("UDatosPerfilUsuario")]
+        //public JsonResult UDatosPerfilUsuario(string usuario, string correo_Usuario, string cedula_usuario, string clave, string telefono_Usuario)
+        //{
+        //    Models.Usuario usuarios = new Models.Usuario();
+        //    var response = usuarios.UDatosPerfilUsuario(usuario, correo_Usuario, cedula_usuario, clave, telefono_Usuario);
+        //    return CustomJsonResult(response);
+
+        //}
 
         //// CONSULTAR ORDENES DE UN TECNICO
         //[HttpGet("ConsultarListadoDeOrdenesPorTecnico/{id_tecnico},{progreso_orden}")]
