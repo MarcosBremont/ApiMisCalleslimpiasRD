@@ -306,6 +306,42 @@ namespace ApiMisCallesLimpiasRD.Controllers
 
 
 
+        [HttpGet]
+        [Route("IniciarSesionEmpresas")]
+        public JsonResult IniciarSesionEmpresas(string usuario, string clave)
+        {
+            Models.UsuarioEmpresa usuarios = new Models.UsuarioEmpresa();
+            var response = usuarios.IniciarSesionEmpresas(usuario, clave);
+            return CustomJsonResult(response);
+        }
+
+
+        [HttpGet]
+        [Route("ConsultarListadoDeReportesEmpresas")]
+        public JsonResult ConsultarListadoDeMisReportesEmpresas()
+        {
+            Models.MisReportesEmpresas misreportes = new Models.MisReportesEmpresas();
+
+            List<Models.Entidad.Emisreportes> lista_de_misreportes_Empresas = misreportes.lista_de_misreportes_Empresas();
+
+            return CustomJsonResult(lista_de_misreportes_Empresas);
+        }
+
+
+        [HttpGet]
+        [Route("EliminarReporte")]
+        public JsonResult EliminarReporte(int cod_reporte)
+        {
+            Models.MisReportesEmpresas misreportes = new Models.MisReportesEmpresas();
+
+            List<Models.Entidad.Emisreportes> lista_eliminar_reportes = misreportes.Eliminar_Reporte(cod_reporte);
+
+            return CustomJsonResult(lista_eliminar_reportes);
+        }
+
+
+
+
         //// CONSULTAR ORDENES DE UN TECNICO
         //[HttpGet("ConsultarListadoDeOrdenesPorTecnico/{id_tecnico},{progreso_orden}")]
         //public ActionResult<IEnumerable<Models.Entidad.EOrdenServi>> ConsultarListadoDeOrdenesPorTecnico(int id_tecnico, string progreso_orden)
