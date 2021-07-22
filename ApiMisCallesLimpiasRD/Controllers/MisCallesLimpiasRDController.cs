@@ -407,6 +407,15 @@ namespace ApiMisCallesLimpiasRD.Controllers
         }
 
 
+        [HttpGet]
+        [Route("ProcesarOrden")]
+        public JsonResult ProcesarPuntos(int cod_usuario, double puntosacumulados)
+        {
+            Models.ProcesarOrden proceso = new Models.ProcesarOrden();
+            return CustomJsonResult(proceso.ProcesarPuntos(cod_usuario, puntosacumulados));
+        }
+
+
         //[HttpGet]
         //[Route("UDatosPerfilUsuario")]
         //public JsonResult UDatosPerfilUsuario(string usuario, string correo_Usuario, string cedula_usuario, string clave, string telefono_Usuario)
