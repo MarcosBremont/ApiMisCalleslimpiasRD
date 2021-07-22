@@ -169,7 +169,7 @@ namespace ApiMisCallesLimpiasRD.Controllers
             return CustomJsonResult(response);
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("UDatosPerfilUsuario")]
         public string UDatosPerfilUsuario(Eusuario content)
         {
@@ -393,6 +393,17 @@ namespace ApiMisCallesLimpiasRD.Controllers
             }
 
             return msj;
+        }
+
+
+        //Consultar los recibos por ID de usuario
+        [HttpGet]
+        [Route("obtenerFotoPerfil")]
+        public JsonResult obtenerFotoPerfil(int cod_usuario)
+        {
+            Models.Usuario usuario = new Models.Usuario();
+            var response = usuario.obtenerFotoPerfil(cod_usuario);
+            return CustomJsonResult(response);
         }
 
 

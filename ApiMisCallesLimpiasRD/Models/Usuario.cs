@@ -210,6 +210,44 @@ namespace ApiMisCallesLimpiasRD.Models
             return eusuario;
         }
 
+        public Eusuario obtenerFotoPerfil(int cod_usuario)
+        {
+            Eusuario eusuario = new Eusuario();
+            try
+            {
+
+                DataTable dt = new DataTable();
+                MySqlCommand cmd = new MySqlCommand("SListaFotoPerfil", GetCon());
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("prm_cod_usuario", MySqlDbType.Int32).Value = cod_usuario;
+                MySqlDataAdapter da = new MySqlDataAdapter();
+                da.SelectCommand = cmd;
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0)
+                {
+                    var result = JsonConvert.SerializeObject(dt, Formatting.Indented).Replace("[", "").Replace("]", "");
+                    eusuario = JsonConvert.DeserializeObject<Eusuario>(result, new JsonSerializerSettings()
+                    {
+                        NullValueHandling = NullValueHandling.Ignore
+                    });
+
+                    eusuario.respuesta = "OK";
+                }
+                else
+                {
+                    eusuario.respuesta = "NO";
+                    eusuario.mensaje = "¡No se pudo registrar el usuario!";
+                }
+            }
+            catch (Exception ex)
+            {
+                eusuario.respuesta = "NO";
+                eusuario.mensaje = "Error. no se pudo realizar la tarea solicitada.";
+            }
+            return eusuario;
+        }
+
 
         //public Eusuario UDatosPerfilUsuario(string foto_usuario, int cod_usuario)
         //{
