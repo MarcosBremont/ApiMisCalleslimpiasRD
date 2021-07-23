@@ -415,6 +415,13 @@ namespace ApiMisCallesLimpiasRD.Controllers
             return CustomJsonResult(proceso.ProcesarPuntos(cod_usuario, puntosacumulados));
         }
 
+        [HttpGet]
+        [Route("EliminarRecompensas")]
+        public JsonResult EliminarRecompensa(int cod_recompensa)
+        {
+            Models.EliminarRecompensa eliminarrecompensa = new Models.EliminarRecompensa();
+            return CustomJsonResult(eliminarrecompensa.EliminarRecompensaSeleccionada(cod_recompensa));
+        }
 
         //[HttpGet]
         //[Route("UDatosPerfilUsuario")]

@@ -9,19 +9,16 @@ using System.Threading.Tasks;
 
 namespace ApiMisCallesLimpiasRD.Models
 {
-  public class ActualizarMisPuntos : Conexion
+  public class EliminarRecompensa : Conexion
   {
-      public EEliminarRecompensa Actualizar(int cod_puntos, double puntosacumulados, int cod_usuario)
+      public EEliminarRecompensa EliminarRecompensaSeleccionada(int cod_recompensa)
       {
         EEliminarRecompensa resultado = new EEliminarRecompensa();
         try
         {
-          MySqlCommand cmd = new MySqlCommand("ActualizarPuntos", GetCon());
+          MySqlCommand cmd = new MySqlCommand("EliminarRecompensa", GetCon());
           cmd.CommandType = CommandType.StoredProcedure;
-          cmd.Parameters.Add("prm_cod_puntos", MySqlDbType.Int32).Value = cod_puntos;
-          cmd.Parameters.Add("prm_puntosacumulado", MySqlDbType.Double).Value = puntosacumulados;
-          cmd.Parameters.Add("prm_cod_usuario", MySqlDbType.Text).Value = cod_usuario;
-
+          cmd.Parameters.Add("prm_cod_recompensa", MySqlDbType.Int32).Value = cod_recompensa;
           Conectar();
           cmd.ExecuteNonQuery();
           Desconectar();

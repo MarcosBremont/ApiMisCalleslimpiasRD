@@ -11,9 +11,9 @@ namespace ApiMisCallesLimpiasRD.Models
 {
   public class ProcesarOrden : Conexion
   {
-      public EActualizarMisPuntos ProcesarPuntos( int cod_usuario,double puntosacumulados)
+      public EEliminarRecompensa ProcesarPuntos( int cod_usuario,double puntosacumulados)
       {
-        EActualizarMisPuntos resultado = new EActualizarMisPuntos();
+        EEliminarRecompensa resultado = new EEliminarRecompensa();
         try
         {
           MySqlCommand cmd = new MySqlCommand("procesarPuntos", GetCon());
