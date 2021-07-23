@@ -9,31 +9,31 @@ using System.Threading.Tasks;
 
 namespace ApiMisCallesLimpiasRD.Models
 {
-  public class ActualizarMisPuntos : Conexion
-  {
-      public EEliminarRecompensa Actualizar(int cod_puntos, double puntosacumulados, int cod_usuario)
-      {
-        EEliminarRecompensa resultado = new EEliminarRecompensa();
-        try
+    public class ActualizarMisPuntos : Conexion
+    {
+        public EActualizarMisPuntos Actualizar(int cod_puntos, double puntosacumulados, int cod_usuario)
         {
-          MySqlCommand cmd = new MySqlCommand("ActualizarPuntos", GetCon());
-          cmd.CommandType = CommandType.StoredProcedure;
-          cmd.Parameters.Add("prm_cod_puntos", MySqlDbType.Int32).Value = cod_puntos;
-          cmd.Parameters.Add("prm_puntosacumulado", MySqlDbType.Double).Value = puntosacumulados;
-          cmd.Parameters.Add("prm_cod_usuario", MySqlDbType.Text).Value = cod_usuario;
+            EActualizarMisPuntos resultado = new EActualizarMisPuntos();
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand("ActualizarPuntos", GetCon());
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("prm_cod_puntos", MySqlDbType.Int32).Value = cod_puntos;
+                cmd.Parameters.Add("prm_puntosacumulado", MySqlDbType.Double).Value = puntosacumulados;
+                cmd.Parameters.Add("prm_cod_usuario", MySqlDbType.Text).Value = cod_usuario;
 
-          Conectar();
-          cmd.ExecuteNonQuery();
-          Desconectar();
-          resultado.respuesta = "OK";
-        }
-        catch (Exception ex)
-        {
-          resultado.respuesta = "ERROR";
-          resultado.mensaje = ex.Message;
-        }
+                Conectar();
+                cmd.ExecuteNonQuery();
+                Desconectar();
+                resultado.respuesta = "OK";
+            }
+            catch (Exception ex)
+            {
+                resultado.respuesta = "ERROR";
+                resultado.mensaje = ex.Message;
+            }
 
-        return resultado;
-      }
+            return resultado;
+        }
     }
-  }
+}
