@@ -433,6 +433,16 @@ namespace ApiMisCallesLimpiasRD.Controllers
             return CustomJsonResult(actualizarrecompensas.Actualizar_Recompensa(cod_recompensa,  puntos,  nombre,  imagen,  descripcion));
         }
 
+
+
+        [HttpGet]
+        [Route("AgregarRecompensa")]
+        public JsonResult agregar_Recompensa( string nombre,double puntos,  string imagen, string descripcion)
+        {
+            Models.AgregarRecompensa agregarrecompensa = new Models.AgregarRecompensa();
+            return CustomJsonResult(agregarrecompensa.agregar_Recompensa(nombre, puntos, imagen, descripcion));
+        }
+
         //[HttpGet]
         //[Route("UDatosPerfilUsuario")]
         //public JsonResult UDatosPerfilUsuario(string usuario, string correo_Usuario, string cedula_usuario, string clave, string telefono_Usuario)
