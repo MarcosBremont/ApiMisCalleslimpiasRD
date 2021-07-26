@@ -443,6 +443,18 @@ namespace ApiMisCallesLimpiasRD.Controllers
             return CustomJsonResult(agregarrecompensa.agregar_Recompensa(nombre, puntos, imagen, descripcion));
         }
 
+
+
+
+        [HttpGet]
+        [Route("ActualizarReporte")]
+        public JsonResult ActualizarReporte(int cod_reporte)
+        {
+            Models.ActualizarReporte actualizarReporte = new Models.ActualizarReporte();
+            return CustomJsonResult(actualizarReporte.Actualizar_Reportes(cod_reporte));
+        }
+
+
         //[HttpGet]
         //[Route("UDatosPerfilUsuario")]
         //public JsonResult UDatosPerfilUsuario(string usuario, string correo_Usuario, string cedula_usuario, string clave, string telefono_Usuario)
