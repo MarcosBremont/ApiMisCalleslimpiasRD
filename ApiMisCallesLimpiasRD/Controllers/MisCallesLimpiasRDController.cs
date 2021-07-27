@@ -455,6 +455,18 @@ namespace ApiMisCallesLimpiasRD.Controllers
         }
 
 
+
+        [HttpGet]
+        [Route("ConsultarRecibosEmpresas")]
+
+        public JsonResult consultarRecibosEmpresas()
+        {
+            Models.ConsultarReciboEmpresas consultaNecesaria = new Models.ConsultarReciboEmpresas();
+            List<Models.Entidad.EConsultarRecibos> listado_de_recibos = consultaNecesaria.listado_de_recibos_Empresas();
+            return CustomJsonResult(listado_de_recibos);
+        }
+
+
         //[HttpGet]
         //[Route("UDatosPerfilUsuario")]
         //public JsonResult UDatosPerfilUsuario(string usuario, string correo_Usuario, string cedula_usuario, string clave, string telefono_Usuario)
