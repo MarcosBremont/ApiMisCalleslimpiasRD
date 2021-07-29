@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qP1EzDMdRJmUxEJHFKDRdcO8qUgwlRK6i6Hy4Jq9UVza3mMuxMfbmVj/rWhD0Fja7QRv8jD43YCc0zUj/Gnhhg==",
+  "dgSpecHash": "V28WhuS/bHYu98H2LljXIP8RU0dmKaSgRhJhNTjsPrO4GOmWE0LPZazmcs0UwYrGFiqQ4xE3KiLIhklnNvbBIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\the_s\\OneDrive\\Escritorio\\prueba 115\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
+  "projectFilePath": "C:\\Users\\the_s\\OneDrive\\Escritorio\\119\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\the_s\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\the_s\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",

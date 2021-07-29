@@ -538,3 +538,39 @@ C:\Users\the_s\OneDrive\Escritorio\prueba 115\ApiMisCalleslimpiasRD\ApiMisCalles
 C:\Users\the_s\OneDrive\Escritorio\prueba 115\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.pdb
 C:\Users\the_s\OneDrive\Escritorio\prueba 115\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.genruntimeconfig.cache
 C:\Users\the_s\OneDrive\Escritorio\prueba 115\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.csproj.CopyComplete
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\bin\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.deps.json
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\bin\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.runtimeconfig.json
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\bin\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.runtimeconfig.dev.json
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\bin\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.dll
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\bin\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.pdb
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\bin\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.Views.dll
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\bin\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.Views.pdb
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.csproj.AssemblyReference.cache
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.AssemblyInfoInputs.cache
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.AssemblyInfo.cs
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.csproj.CoreCompileInputs.cache
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.RazorAssemblyInfo.cache
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.RazorAssemblyInfo.cs
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.TagHelpers.input.cache
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.TagHelpers.output.cache
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.RazorCoreGenerate.cache
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.RazorTargetAssemblyInfo.cache
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.RazorTargetAssemblyInfo.cs
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.Views.pdb
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.dll
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.pdb
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.genruntimeconfig.cache
+C:\Users\the_s\OneDrive\Escritorio\119\ApiMisCalleslimpiasRD\ApiMisCallesLimpiasRD\obj\Debug\netcoreapp2.1\ApiMisCallesLimpiasRD.csproj.CopyComplete

@@ -467,6 +467,16 @@ namespace ApiMisCallesLimpiasRD.Controllers
         }
 
 
+
+        [HttpGet]
+        [Route("RegistrarMensajesErrorAceptacion")]
+        public JsonResult AgregarMensaje(int cod_usuario, string mensajes)
+        {
+            Models.AgregarMensaje agregarMensaje = new Models.AgregarMensaje();
+            return CustomJsonResult(agregarMensaje.agregar_Mensaje(cod_usuario, mensajes));
+        }
+
+
         //[HttpGet]
         //[Route("UDatosPerfilUsuario")]
         //public JsonResult UDatosPerfilUsuario(string usuario, string correo_Usuario, string cedula_usuario, string clave, string telefono_Usuario)
