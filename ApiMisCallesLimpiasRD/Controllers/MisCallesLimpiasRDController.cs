@@ -454,6 +454,15 @@ namespace ApiMisCallesLimpiasRD.Controllers
             return CustomJsonResult(actualizarReporte.Actualizar_Reportes(cod_reporte));
         }
 
+        [HttpGet]
+        [Route("ConsultarReportePorCodigo")]
+        public JsonResult ConsultarReportePorCodigo(int cod_reporte)
+        {
+            Models.Misreportes misreportes = new Models.Misreportes();
+            List<Models.Entidad.Emisreportes> lista_reporte = misreportes.lista_reporte(cod_reporte);
+            return CustomJsonResult(lista_reporte);
+        }
+
 
         //[HttpGet]
         //[Route("UDatosPerfilUsuario")]

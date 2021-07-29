@@ -118,54 +118,81 @@ namespace ApiMisCallesLimpiasRD.Models
     }
 
 
-    //public List<Models.Entidad.Emisreportes> lista_imagenes(int cod_reporte)
-    //{
-    //  Emisreportes emisreportes = new Emisreportes();
-    //  List<Models.Entidad.Emisreportes> lista_imagenes = new List<Models.Entidad.Emisreportes>();
 
-    //  DataTable dt = new DataTable();
-    //  MySqlCommand cmd = new MySqlCommand("SListaFotos", GetCon());
-    //  cmd.CommandType = CommandType.StoredProcedure;
-    //  cmd.Parameters.Add("prm_cod_reporte", MySqlDbType.Int32).Value = cod_reporte;
-    //  MySqlDataAdapter da = new MySqlDataAdapter();
-    //  da.SelectCommand = cmd;
-    //  da.Fill(dt);
+        public List<Models.Entidad.Emisreportes> lista_reporte(int cod_reporte)
+        {
+            List<Models.Entidad.Emisreportes> lista_reporte = new List<Models.Entidad.Emisreportes>();
 
-    //  if (dt.Rows.Count > 0)
-    //  {
-    //    var result = JsonConvert.SerializeObject(dt, Formatting.Indented);
-    //    lista_imagenes = JsonConvert.DeserializeObject<List<Models.Entidad.Emisreportes>>(result, new JsonSerializerSettings()
-    //    {
-    //      NullValueHandling = NullValueHandling.Ignore
-    //    });
-       
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand("SListaMisReportesPorCod_Reporte", GetCon());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("prm_cod_reporte", MySqlDbType.Int32).Value = cod_reporte;
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            da.SelectCommand = cmd;
+            da.Fill(dt);
 
-    //  }
-    //  else
-    //  {
-    //  }
+            if (dt.Rows.Count > 0)
+            {
+                var result = JsonConvert.SerializeObject(dt, Formatting.Indented);
+                lista_reporte = JsonConvert.DeserializeObject<List<Models.Entidad.Emisreportes>>(result, new JsonSerializerSettings()
+                {
+                    NullValueHandling = NullValueHandling.Ignore
+                });
+            }
 
-    //  return lista_imagenes;
-    //}
+            return lista_reporte;
+        }
 
-    //public List<Models.Entidad.EProducto> Lista_de_productos_por_sector(int id_sector, string estado, string serviciotecnico)
-    //{
 
-    //    List<Models.Entidad.EProducto> Lista_de_productos_por_sector = new List<Models.Entidad.EProducto>();
 
-    //    DataTable dt = new DataTable();
-    //    MySqlDataAdapter da = new MySqlDataAdapter("SListaProductosPorSector", GetCon());
-    //    da.SelectCommand.CommandType = CommandType.StoredProcedure;
-    //    da.SelectCommand.Parameters.Add("prm_id_sector", MySqlDbType.Int32).Value = id_sector;
-    //    da.SelectCommand.Parameters.Add("prm_estado", MySqlDbType.VarChar).Value = estado;
-    //    da.SelectCommand.Parameters.Add("prm_serviciotecnico", MySqlDbType.VarChar).Value = serviciotecnico;
-    //    da.Fill(dt);
-    //    if (dt.Rows.Count > 0)
-    //    {
-    //        Lista_de_productos_por_sector = metodoControl.ConvertirTablaEnLista<Models.Entidad.EProducto>(dt);
-    //    }
-    //    return Lista_de_productos_por_sector;
-    //}
+        //public List<Models.Entidad.Emisreportes> lista_imagenes(int cod_reporte)
+        //{
+        //  Emisreportes emisreportes = new Emisreportes();
+        //  List<Models.Entidad.Emisreportes> lista_imagenes = new List<Models.Entidad.Emisreportes>();
 
-  }
+        //  DataTable dt = new DataTable();
+        //  MySqlCommand cmd = new MySqlCommand("SListaFotos", GetCon());
+        //  cmd.CommandType = CommandType.StoredProcedure;
+        //  cmd.Parameters.Add("prm_cod_reporte", MySqlDbType.Int32).Value = cod_reporte;
+        //  MySqlDataAdapter da = new MySqlDataAdapter();
+        //  da.SelectCommand = cmd;
+        //  da.Fill(dt);
+
+        //  if (dt.Rows.Count > 0)
+        //  {
+        //    var result = JsonConvert.SerializeObject(dt, Formatting.Indented);
+        //    lista_imagenes = JsonConvert.DeserializeObject<List<Models.Entidad.Emisreportes>>(result, new JsonSerializerSettings()
+        //    {
+        //      NullValueHandling = NullValueHandling.Ignore
+        //    });
+
+
+        //  }
+        //  else
+        //  {
+        //  }
+
+        //  return lista_imagenes;
+        //}
+
+        //public List<Models.Entidad.EProducto> Lista_de_productos_por_sector(int id_sector, string estado, string serviciotecnico)
+        //{
+
+        //    List<Models.Entidad.EProducto> Lista_de_productos_por_sector = new List<Models.Entidad.EProducto>();
+
+        //    DataTable dt = new DataTable();
+        //    MySqlDataAdapter da = new MySqlDataAdapter("SListaProductosPorSector", GetCon());
+        //    da.SelectCommand.CommandType = CommandType.StoredProcedure;
+        //    da.SelectCommand.Parameters.Add("prm_id_sector", MySqlDbType.Int32).Value = id_sector;
+        //    da.SelectCommand.Parameters.Add("prm_estado", MySqlDbType.VarChar).Value = estado;
+        //    da.SelectCommand.Parameters.Add("prm_serviciotecnico", MySqlDbType.VarChar).Value = serviciotecnico;
+        //    da.Fill(dt);
+        //    if (dt.Rows.Count > 0)
+        //    {
+        //        Lista_de_productos_por_sector = metodoControl.ConvertirTablaEnLista<Models.Entidad.EProducto>(dt);
+        //    }
+        //    return Lista_de_productos_por_sector;
+        //}
+
+    }
 }
