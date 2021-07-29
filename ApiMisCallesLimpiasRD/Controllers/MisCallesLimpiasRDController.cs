@@ -486,6 +486,18 @@ namespace ApiMisCallesLimpiasRD.Controllers
         }
 
 
+
+        [HttpGet]
+        [Route("ConsultarMensajes")]
+
+        public JsonResult Consultar_Mensajes(int cod_usuario)
+        {
+            Models.ConsultarMensajes consultaNecesaria = new Models.ConsultarMensajes();
+            List<Models.Entidad.EMensajes> listado_de_mensajes = consultaNecesaria.listado_mensjaes(cod_usuario);
+            return CustomJsonResult(listado_de_mensajes);
+        }
+
+
         //[HttpGet]
         //[Route("UDatosPerfilUsuario")]
         //public JsonResult UDatosPerfilUsuario(string usuario, string correo_Usuario, string cedula_usuario, string clave, string telefono_Usuario)
