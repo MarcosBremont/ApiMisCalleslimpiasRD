@@ -16,6 +16,7 @@ using MySqlX.XDevAPI.Common;
 using System.Web.Http.Cors;
 using ApiMisCallesLimpiasRD.Servicios;
 using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
 
 namespace ApiMisCallesLimpiasRD.Controllers
 {
@@ -269,8 +270,12 @@ namespace ApiMisCallesLimpiasRD.Controllers
                         var imageName = $"/images/{Guid.NewGuid().ToString()}.jpeg";
                         var bytes = Convert.FromBase64String(content.fotos);
                         var image = Image.Load(bytes);
+                        int width = image.Width / 4;
+                        int height = image.Height / 4;
+                        image.Mutate(x => x.Resize(width, height));
                         image.SaveAsJpeg(Path.GetFullPath($"wwwroot/{imageName}"));
                         content.fotos = imageName;
+
                     }
 
                 }
@@ -376,7 +381,11 @@ namespace ApiMisCallesLimpiasRD.Controllers
                         var imageName = $"/images/{Guid.NewGuid().ToString()}.jpeg";
                         var bytes = Convert.FromBase64String(content.foto_usuario);
                         var image = Image.Load(bytes);
-                        image.SaveAsJpeg(Path.GetFullPath($"wwwroot/{imageName}"));
+                        int width = image.Width / 4;
+                        int height = image.Height / 4;
+                        image.Mutate(x => x.Resize(width, height));
+                        image.Save(Path.GetFullPath($"wwwroot/{imageName}"));
+
                         content.foto_usuario = imageName;
                     }
 
@@ -496,6 +505,9 @@ namespace ApiMisCallesLimpiasRD.Controllers
             List<Models.Entidad.EMensajes> listado_de_mensajes = consultaNecesaria.listado_mensjaes(cod_usuario);
             return CustomJsonResult(listado_de_mensajes);
         }
+
+
+
 
 
         //[HttpGet]
