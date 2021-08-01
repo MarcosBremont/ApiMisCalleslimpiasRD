@@ -12,5 +12,7 @@ namespace ApiMisCallesLimpiasRD.Models.Entidad
         public int cod_recompensa { get; set; } = 0;
         public string estado { get; set; } = "";
         public string fecha { get; set; } = "";
+        public string respuesta { get; set; }
+        public string mensaje { get; set; }
     }
 }

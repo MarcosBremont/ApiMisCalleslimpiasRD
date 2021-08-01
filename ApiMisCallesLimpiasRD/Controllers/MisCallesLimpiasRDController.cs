@@ -507,7 +507,51 @@ namespace ApiMisCallesLimpiasRD.Controllers
         }
 
 
+        [HttpGet]
+        [Route("DesactivarRecompensa")]
 
+        public JsonResult desacivar_Recompensa(int cod_recompensa)
+        {
+            Models.DesactivarRecompensa desactivar = new Models.DesactivarRecompensa();
+            return CustomJsonResult(desactivar.Desactivar_Recompensa(cod_recompensa));
+        }
+
+
+
+        [HttpGet]
+        [Route("ActualizarReciboProcesar")]
+        public JsonResult actualizarRecibos(int cod_recibo)
+        {
+            Models.ActualizarRecibosProcesar actualizarRecibo = new Models.ActualizarRecibosProcesar();
+            return CustomJsonResult(actualizarRecibo.Actualizar_Recibos(cod_recibo));
+        }
+
+
+
+        [HttpGet]
+        [Route("ActualizarPost")]
+        public JsonResult actualizar_Post(int cod_post, string titulo, string descripcion, string imagen)
+        {
+            Models.ActualizarPost actualizarPost = new Models.ActualizarPost();
+            return CustomJsonResult(actualizarPost.actualizar_post(cod_post, titulo, descripcion, imagen));
+        }
+
+        [HttpGet]
+        [Route("EliminarPost")]
+        public JsonResult Eliminar_Post(int cod_post)
+        {
+            Models.EliminarPost eliminarPost = new Models.EliminarPost();
+            return CustomJsonResult(eliminarPost.eliminarPost(cod_post));
+        }
+
+
+        [HttpGet]
+        [Route("AgregarPostEducacional")]
+        public JsonResult Agregar_Post(string titulo, string descripcion, string imagen)
+        {
+            Models.AgregarPost agregarPost = new Models.AgregarPost();
+            return CustomJsonResult(agregarPost.agregarPost(titulo, descripcion, imagen));
+        }
 
 
         //[HttpGet]

@@ -12,5 +12,7 @@ namespace ApiMisCallesLimpiasRD.Models.Entidad
         public string descripcion { get; set; } = "";
         public string imagen { get; set; } = "";
         public string fecha { get; set; } = "";
+        public string respuesta { get; set; }
+        public string mensaje { get; set; }
     }
 }
