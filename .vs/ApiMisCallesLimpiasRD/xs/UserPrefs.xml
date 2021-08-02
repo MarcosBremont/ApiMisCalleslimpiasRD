@@ -1,20 +1,17 @@
 ﻿<Properties StartupConfiguration="{6F388FB1-CC9B-467F-A553-F277BBF7E2E5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ApiMisCallesLimpiasRD/Views/Home/Index.cshtml">
-    <Files>
-      <File FileName="ApiMisCallesLimpiasRD/Controllers/MisCallesLimpiasRDController.cs" Line="458" Column="42" />
-      <File FileName="ApiMisCallesLimpiasRD/Models/MisReportes.cs" Line="143" Column="33" />
-      <File FileName="ApiMisCallesLimpiasRD/Views/Home/Index.cshtml" Line="41" Column="54" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ApiMisCallesLimpiasRD" expanded="True">
-            <Node name="ApiMisCallesLimpiasRD" selected="True" />
+            <Node name="ApiMisCallesLimpiasRD" expanded="True" selected="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
