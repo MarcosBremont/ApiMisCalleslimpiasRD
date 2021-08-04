@@ -554,6 +554,19 @@ namespace ApiMisCallesLimpiasRD.Controllers
         }
 
 
+        [HttpGet]
+        [Route("DatosUsuarios")]
+
+        public JsonResult Consultar_Usuarios(int cod_usuario)
+        {
+            Models.DatosUsuariosPorCodigo consultaNecesaria = new Models.DatosUsuariosPorCodigo();
+            List<Models.Entidad.Eusuario> listado_usuarios = consultaNecesaria.listado_usuarios(cod_usuario);
+            return CustomJsonResult(listado_usuarios);
+        }
+
+
+
+
         //[HttpGet]
         //[Route("UDatosPerfilUsuario")]
         //public JsonResult UDatosPerfilUsuario(string usuario, string correo_Usuario, string cedula_usuario, string clave, string telefono_Usuario)
