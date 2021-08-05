@@ -594,8 +594,8 @@ namespace ApiMisCallesLimpiasRD.Controllers
         public JsonResult consultarrecibosporsuidrecibo(int cod_recibo)
         {
             Models.ConsultarRecibo consultaNecesaria = new Models.ConsultarRecibo();
-            List<Models.Entidad.EConsultarRecibos> listado_de_recibos = consultaNecesaria.listado_de_recibos(cod_recibo);
-            return CustomJsonResult(listado_de_recibos);
+            List<Models.Entidad.EConsultarRecibos> listado_de_recibos_por_id = consultaNecesaria.listado_de_recibos_por_id(cod_recibo);
+            return CustomJsonResult(listado_de_recibos_por_id);
         }
 
 

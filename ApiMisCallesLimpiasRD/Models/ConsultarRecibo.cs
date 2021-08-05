@@ -51,13 +51,20 @@ namespace ApiMisCallesLimpiasRD.Models
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
             da.SelectCommand.Parameters.Add("prm_cod_recibo", MySqlDbType.Int32).Value = cod_recibo;
             da.Fill(dt);
+            dt.Columns.Add("fechaCompleta");
             if (dt.Rows.Count > 0)
             {
+                foreach (DataRow row in dt.Rows)
+                {
+                    row["fechaCompleta"] = DateTime.Parse(row["fecha"].ToString()).ToString("dd-MM-yyyy h:mm:ss tt");
+                }
+
                 var result = JsonConvert.SerializeObject(dt, Formatting.Indented);
                 listado_de_recibos_por_id = JsonConvert.DeserializeObject<List<Models.Entidad.EConsultarRecibos>>(result, new JsonSerializerSettings()
                 {
                     NullValueHandling = NullValueHandling.Ignore
                 });
+
             }
             return listado_de_recibos_por_id;
         }
