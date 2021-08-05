@@ -9,51 +9,78 @@ using System.Threading.Tasks;
 
 namespace ApiMisCallesLimpiasRD.Models
 {
-  public class DatosNecesarios : Conexion
-  {
-    //public List<Models.Entidad.EDatosNecesarios> lista_de_datos_necesarios(string usuario)
-    //{
-    //  List<Models.Entidad.EDatosNecesarios> lista_de_datos_necesarios = new List<Models.Entidad.EDatosNecesarios>();
-
-    //  DataTable dt = new DataTable();
-    //  MySqlCommand cmd = new MySqlCommand("SListaDatosNecesarios", GetCon());
-    //  cmd.Parameters.Add("prm_usuario", MySqlDbType.Text).Value = usuario;
-    //  MySqlDataAdapter da = new MySqlDataAdapter();
-    //  da.SelectCommand = cmd;
-    //  da.Fill(dt);
-
-    //  if (dt.Rows.Count > 0)
-    //  {
-    //    var result = JsonConvert.SerializeObject(dt, Formatting.Indented);
-    //    lista_de_datos_necesarios = JsonConvert.DeserializeObject<List<Models.Entidad.EDatosNecesarios>>(result, new JsonSerializerSettings()
-    //    {
-    //      NullValueHandling = NullValueHandling.Ignore
-    //    });
-    //  }
-
-    //  return lista_de_datos_necesarios;
-    //}
-
-    public List<Models.Entidad.EDatosNecesarios> lista_de_datos_necesarios(string usuario)
+    public class DatosNecesarios : Conexion
     {
+        //public List<Models.Entidad.EDatosNecesarios> lista_de_datos_necesarios(string usuario)
+        //{
+        //  List<Models.Entidad.EDatosNecesarios> lista_de_datos_necesarios = new List<Models.Entidad.EDatosNecesarios>();
 
-      List<Models.Entidad.EDatosNecesarios> lista_de_datos_necesarios = new List<Models.Entidad.EDatosNecesarios>();
+        //  DataTable dt = new DataTable();
+        //  MySqlCommand cmd = new MySqlCommand("SListaDatosNecesarios", GetCon());
+        //  cmd.Parameters.Add("prm_usuario", MySqlDbType.Text).Value = usuario;
+        //  MySqlDataAdapter da = new MySqlDataAdapter();
+        //  da.SelectCommand = cmd;
+        //  da.Fill(dt);
 
-      DataTable dt = new DataTable();
-      MySqlDataAdapter da = new MySqlDataAdapter("SListaDatosNecesarios", GetCon());
-      da.SelectCommand.CommandType = CommandType.StoredProcedure;
-      da.SelectCommand.Parameters.Add("prm_usuario", MySqlDbType.VarChar).Value = usuario;
-      da.Fill(dt);
-      if (dt.Rows.Count > 0)
-      {
-        var result = JsonConvert.SerializeObject(dt, Formatting.Indented);
-        lista_de_datos_necesarios = JsonConvert.DeserializeObject<List<Models.Entidad.EDatosNecesarios>>(result, new JsonSerializerSettings()
+        //  if (dt.Rows.Count > 0)
+        //  {
+        //    var result = JsonConvert.SerializeObject(dt, Formatting.Indented);
+        //    lista_de_datos_necesarios = JsonConvert.DeserializeObject<List<Models.Entidad.EDatosNecesarios>>(result, new JsonSerializerSettings()
+        //    {
+        //      NullValueHandling = NullValueHandling.Ignore
+        //    });
+        //  }
+
+        //  return lista_de_datos_necesarios;
+        //}
+
+        public List<Models.Entidad.EDatosNecesarios> lista_de_datos_necesarios(string usuario)
         {
-          NullValueHandling = NullValueHandling.Ignore
-        });
-      }
-      return lista_de_datos_necesarios;
+
+            List<Models.Entidad.EDatosNecesarios> lista_de_datos_necesarios = new List<Models.Entidad.EDatosNecesarios>();
+
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter("SListaDatosNecesarios", GetCon());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.Add("prm_usuario", MySqlDbType.VarChar).Value = usuario;
+            da.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                var result = JsonConvert.SerializeObject(dt, Formatting.Indented);
+                lista_de_datos_necesarios = JsonConvert.DeserializeObject<List<Models.Entidad.EDatosNecesarios>>(result, new JsonSerializerSettings()
+                {
+                    NullValueHandling = NullValueHandling.Ignore
+                });
+            }
+            return lista_de_datos_necesarios;
+        }
+
+
+
+
+        public List<Models.Entidad.EDatosNecesarios> lista_de_datos_inicio(int cod_usuario)
+        {
+
+            List<Models.Entidad.EDatosNecesarios> lista_de_datos_inicio = new List<Models.Entidad.EDatosNecesarios>();
+
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter("SlistaDeDatosInicio", GetCon());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.Add("prm_cod_usuario", MySqlDbType.Int32).Value = cod_usuario;
+            da.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                var result = JsonConvert.SerializeObject(dt, Formatting.Indented);
+                lista_de_datos_inicio = JsonConvert.DeserializeObject<List<Models.Entidad.EDatosNecesarios>>(result, new JsonSerializerSettings()
+                {
+                    NullValueHandling = NullValueHandling.Ignore
+                });
+            }
+            return lista_de_datos_inicio;
+        }
+
     }
 
-  }
 }
+
+

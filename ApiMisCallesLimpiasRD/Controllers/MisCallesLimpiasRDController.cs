@@ -554,6 +554,19 @@ namespace ApiMisCallesLimpiasRD.Controllers
             return CustomJsonResult(agregarPost.agregarPost(titulo, descripcion, imagen));
         }
 
+        [HttpGet]
+        [Route("ConsultarListadodeDatosInicio")]
+
+        public JsonResult ConsultarListadodeDatosInicio(int cod_usuario)
+        {
+            Models.DatosNecesarios datosnecesarios = new Models.DatosNecesarios();
+
+            List<Models.Entidad.EDatosNecesarios> lista_de_datos_inicio = datosnecesarios.lista_de_datos_inicio(cod_usuario);
+
+            return CustomJsonResult(lista_de_datos_inicio);
+        }
+
+
 
         [HttpGet]
         [Route("DatosUsuarios")]
