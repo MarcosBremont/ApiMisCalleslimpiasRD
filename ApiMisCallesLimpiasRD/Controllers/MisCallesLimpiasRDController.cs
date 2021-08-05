@@ -41,7 +41,7 @@ namespace ApiMisCallesLimpiasRD.Controllers
 
         [HttpGet]
         [Route("RegistrarUsuario")]
-        public JsonResult RegistrarUsuario(string usuario, string correo_Usuario, string cedula_usuario, string clave, string telefono_Usuario)
+        public JsonResult RegistrarUsuario(string usuario, string correo_Usuario, string cedula_usuario, string clave, string telefono_Usuario, int cod_ayuntamiento)
         {
 
             eusuario.usuario = usuario;
@@ -49,6 +49,7 @@ namespace ApiMisCallesLimpiasRD.Controllers
             eusuario.cedula_usuario = cedula_usuario;
             eusuario.clave = clave;
             eusuario.telefono_Usuario = telefono_Usuario;
+            eusuario.cod_ayuntamiento = cod_ayuntamiento;
             var response = usuarios.RegistrarUsuario(eusuario);
 
             return CustomJsonResult(response);
@@ -564,6 +565,15 @@ namespace ApiMisCallesLimpiasRD.Controllers
             return CustomJsonResult(listado_usuarios);
         }
 
+        [HttpGet]
+        [Route("ConsultarListadoAyuntamientos")]
+
+        public JsonResult consultarListadoAyuntamientos()
+        {
+            Models.ConsultarListadoAyuntamientos consultaNecesaria = new Models.ConsultarListadoAyuntamientos();
+            List<Models.Entidad.EAyuntamientos> listado_ayuntamientos = consultaNecesaria.lista_de_ayuntamientos();
+            return CustomJsonResult(listado_ayuntamientos);
+        }
 
 
 

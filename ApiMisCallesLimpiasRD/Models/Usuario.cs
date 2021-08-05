@@ -63,6 +63,7 @@ namespace ApiMisCallesLimpiasRD.Models
                 cmd.Parameters.Add("prm_clave", MySqlDbType.Text).Value = eusuario.clave;
                 cmd.Parameters.Add("prm_cedula_usuario", MySqlDbType.Text).Value = eusuario.cedula_usuario;
                 cmd.Parameters.Add("prm_telefono_Usuario", MySqlDbType.Text).Value = eusuario.telefono_Usuario;
+                cmd.Parameters.Add("prm_cod_ayuntamiento", MySqlDbType.Int32).Value = eusuario.cod_ayuntamiento;
 
                 MySqlDataAdapter da = new MySqlDataAdapter();
                 da.SelectCommand = cmd;
