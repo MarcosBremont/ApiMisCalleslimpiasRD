@@ -13,7 +13,6 @@ using Newtonsoft.Json;
 using Microsoft.AspNetCore.Cors;
 using ApiMisCallesLimpiasRD.Models.Entidad;
 using MySqlX.XDevAPI.Common;
-using System.Web.Http.Cors;
 using ApiMisCallesLimpiasRD.Servicios;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
@@ -586,6 +585,17 @@ namespace ApiMisCallesLimpiasRD.Controllers
             Models.ConsultarListadoAyuntamientos consultaNecesaria = new Models.ConsultarListadoAyuntamientos();
             List<Models.Entidad.EAyuntamientos> listado_ayuntamientos = consultaNecesaria.lista_de_ayuntamientos();
             return CustomJsonResult(listado_ayuntamientos);
+        }
+
+
+        [HttpGet]
+        [Route("consultarrecibosporsuidrecibo")]
+
+        public JsonResult consultarrecibosporsuidrecibo(int cod_recibo)
+        {
+            Models.ConsultarRecibo consultaNecesaria = new Models.ConsultarRecibo();
+            List<Models.Entidad.EConsultarRecibos> listado_de_recibos = consultaNecesaria.listado_de_recibos(cod_recibo);
+            return CustomJsonResult(listado_de_recibos);
         }
 
 
