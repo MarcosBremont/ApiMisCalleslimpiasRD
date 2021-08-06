@@ -17,5 +17,14 @@ namespace ApiMisCallesLimpiasRD.Models.Entidad
         public string mensaje { get; set; }
 
         public string fechaCompleta { get; set; }
+        public int cod_usuarioreporte { get; set; } = 0;
+        public string usuario { get; set; } = "";
+        public string correo_Usuario { get; set; } = "";
+        public string cedula_usuario { get; set; } = "";
+        public string clave { get; set; } = "";
+        public string telefono_Usuario { get; set; } = "";
+
+
+
     }
 }
