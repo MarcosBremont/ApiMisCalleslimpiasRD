@@ -9,38 +9,39 @@ using System.Threading.Tasks;
 
 namespace ApiMisCallesLimpiasRD.Models
 {
-  public class MisReportesEmpresas : Conexion
-  {
-    //MetodoControl metodoControl = new MetodoControl();
-    public List<Models.Entidad.Emisreportes> lista_de_misreportes_Empresas()
+    public class MisReportesEmpresas : Conexion
     {
-      List<Models.Entidad.Emisreportes> lista_de_misreportes_Empresas = new List<Models.Entidad.Emisreportes>();
-
-      DataTable dt = new DataTable();
-      MySqlCommand cmd = new MySqlCommand("SListaMisReportesEmpresas", GetCon());
-      cmd.CommandType = CommandType.StoredProcedure;
-      MySqlDataAdapter da = new MySqlDataAdapter();
-      da.SelectCommand = cmd;
-      da.Fill(dt);
-
-      if (dt.Rows.Count > 0)
-      {
-        var result = JsonConvert.SerializeObject(dt, Formatting.Indented);
-                lista_de_misreportes_Empresas = JsonConvert.DeserializeObject<List<Models.Entidad.Emisreportes>>(result, new JsonSerializerSettings()
+        //MetodoControl metodoControl = new MetodoControl();
+        public List<Models.Entidad.Emisreportes> lista_de_misreportes_Empresas(int cod_ayuntamiento)
         {
-          NullValueHandling = NullValueHandling.Ignore
-        });
-      }
+            List<Models.Entidad.Emisreportes> lista_de_misreportes_Empresas = new List<Models.Entidad.Emisreportes>();
 
-      return lista_de_misreportes_Empresas;
-    }
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand("SListaMisReportesEmpresas", GetCon());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("prm_cod_ayuntamiento", MySqlDbType.Int32).Value = cod_ayuntamiento;
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            da.SelectCommand = cmd;
+            da.Fill(dt);
+
+            if (dt.Rows.Count > 0)
+            {
+                var result = JsonConvert.SerializeObject(dt, Formatting.Indented);
+                lista_de_misreportes_Empresas = JsonConvert.DeserializeObject<List<Models.Entidad.Emisreportes>>(result, new JsonSerializerSettings()
+                {
+                    NullValueHandling = NullValueHandling.Ignore
+                });
+            }
+
+            return lista_de_misreportes_Empresas;
+        }
 
 
         public List<Models.Entidad.Emisreportes> Eliminar_Reporte(int cod_reporte)
         {
-           
 
-                List<Models.Entidad.Emisreportes> lista_eliminar_reportes = new List<Models.Entidad.Emisreportes>();
+
+            List<Models.Entidad.Emisreportes> lista_eliminar_reportes = new List<Models.Entidad.Emisreportes>();
 
             DataTable dt = new DataTable();
             MySqlDataAdapter da = new MySqlDataAdapter("eliminarReporte", GetCon());
@@ -62,46 +63,46 @@ namespace ApiMisCallesLimpiasRD.Models
 
 
 
-            public Emisreportes obtenerFotos(int cod_reporte)
-    {
-      Emisreportes emisreportes1 = new Emisreportes();
-      try
-      {
-
-        DataTable dt = new DataTable();
-        MySqlCommand cmd = new MySqlCommand("SListaFotos", GetCon());
-        cmd.CommandType = CommandType.StoredProcedure;
-        cmd.Parameters.Add("prm_cod_reporte", MySqlDbType.Int32).Value = cod_reporte;
-        MySqlDataAdapter da = new MySqlDataAdapter();
-        da.SelectCommand = cmd;
-        da.Fill(dt);
-
-        if (dt.Rows.Count > 0)
+        public Emisreportes obtenerFotos(int cod_reporte)
         {
-          var result = JsonConvert.SerializeObject(dt, Formatting.Indented).Replace("[", "").Replace("]", "");
-          emisreportes1 = JsonConvert.DeserializeObject<Emisreportes>(result, new JsonSerializerSettings()
-          {
-            NullValueHandling = NullValueHandling.Ignore
-          });
+            Emisreportes emisreportes1 = new Emisreportes();
+            try
+            {
 
-          emisreportes1.respuesta = "OK";
+                DataTable dt = new DataTable();
+                MySqlCommand cmd = new MySqlCommand("SListaFotos", GetCon());
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("prm_cod_reporte", MySqlDbType.Int32).Value = cod_reporte;
+                MySqlDataAdapter da = new MySqlDataAdapter();
+                da.SelectCommand = cmd;
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0)
+                {
+                    var result = JsonConvert.SerializeObject(dt, Formatting.Indented).Replace("[", "").Replace("]", "");
+                    emisreportes1 = JsonConvert.DeserializeObject<Emisreportes>(result, new JsonSerializerSettings()
+                    {
+                        NullValueHandling = NullValueHandling.Ignore
+                    });
+
+                    emisreportes1.respuesta = "OK";
+                }
+                else
+                {
+                    emisreportes1.respuesta = "NO";
+                    emisreportes1.mensaje = "¡No se pudo registrar el usuario!";
+                }
+            }
+            catch (Exception ex)
+            {
+                emisreportes1.respuesta = "NO";
+                emisreportes1.mensaje = "Error. no se pudo realizar la tarea solicitada.";
+            }
+            return emisreportes1;
         }
-        else
-        {
-          emisreportes1.respuesta = "NO";
-          emisreportes1.mensaje = "¡No se pudo registrar el usuario!";
-        }
-      }
-      catch (Exception ex)
-      {
-        emisreportes1.respuesta = "NO";
-        emisreportes1.mensaje = "Error. no se pudo realizar la tarea solicitada.";
-      }
-      return emisreportes1;
+
+
+
+
     }
-
-
-
-
-  }
 }

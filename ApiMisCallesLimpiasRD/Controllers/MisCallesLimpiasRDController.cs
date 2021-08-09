@@ -335,11 +335,11 @@ namespace ApiMisCallesLimpiasRD.Controllers
 
         [HttpGet]
         [Route("ConsultarListadoDeReportesEmpresas")]
-        public JsonResult ConsultarListadoDeMisReportesEmpresas()
+        public JsonResult ConsultarListadoDeMisReportesEmpresas(int cod_ayuntamiento)
         {
             Models.MisReportesEmpresas misreportes = new Models.MisReportesEmpresas();
 
-            List<Models.Entidad.Emisreportes> lista_de_misreportes_Empresas = misreportes.lista_de_misreportes_Empresas();
+            List<Models.Entidad.Emisreportes> lista_de_misreportes_Empresas = misreportes.lista_de_misreportes_Empresas(cod_ayuntamiento);
 
             return CustomJsonResult(lista_de_misreportes_Empresas);
         }
