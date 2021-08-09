@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{6F388FB1-CC9B-467F-A553-F277BBF7E2E5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ApiMisCallesLimpiasRD/Controllers/MisCallesLimpiasRDController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ApiMisCallesLimpiasRD/Models/Entidad/Emisreportes.cs">
     <Files>
-      <File FileName="ApiMisCallesLimpiasRD/Controllers/MisCallesLimpiasRDController.cs" Line="622" Column="1" />
+      <File FileName="ApiMisCallesLimpiasRD/Controllers/MisCallesLimpiasRDController.cs" Line="626" Column="1" />
+      <File FileName="ApiMisCallesLimpiasRD/Models/Entidad/Emisreportes.cs" Line="16" Column="32" />
+      <File FileName="ApiMisCallesLimpiasRD/Models/Entidad/EusuarioEmpresa.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
