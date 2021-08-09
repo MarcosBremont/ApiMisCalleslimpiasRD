@@ -1,15 +1,13 @@
 ﻿<Properties StartupConfiguration="{6F388FB1-CC9B-467F-A553-F277BBF7E2E5}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ApiMisCallesLimpiasRD/Controllers/MisCallesLimpiasRDController.cs">
+    <Files>
+      <File FileName="ApiMisCallesLimpiasRD/Controllers/MisCallesLimpiasRDController.cs" Line="622" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ApiMisCallesLimpiasRD" expanded="True">
-            <Node name="ApiMisCallesLimpiasRD" expanded="True" selected="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-              </Node>
-            </Node>
+            <Node name="ApiMisCallesLimpiasRD" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -18,7 +16,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/MarcosBremont/Desktop/GIT/ApiMisCallesLimpiasRD/ApiMisCallesLimpiasRD/Models/DatosNecesarios.cs" relfile="ApiMisCallesLimpiasRD/Models/DatosNecesarios.cs" line="113" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.ApiMisCallesLimpiasRD PreferredExecutionTarget="/Applications/Google Chrome.app" />

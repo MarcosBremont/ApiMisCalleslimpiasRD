@@ -565,6 +565,18 @@ namespace ApiMisCallesLimpiasRD.Controllers
             return CustomJsonResult(lista_de_datos_inicio);
         }
 
+        [HttpGet]
+        [Route("ConsultarListadodeDatosInicioAyuntamiento")]
+
+        public JsonResult ConsultarListadodeDatosInicioAyuntamiento(int cod_ayuntamiento)
+        {
+            Models.DatosNecesarios datosnecesarios = new Models.DatosNecesarios();
+
+            List<Models.Entidad.EDatosNecesarios> lista_de_datos_inicio_ayunta = datosnecesarios.lista_de_datos_inicio_ayunta(cod_ayuntamiento);
+
+            return CustomJsonResult(lista_de_datos_inicio_ayunta);
+        }
+
 
 
         [HttpGet]
@@ -598,6 +610,19 @@ namespace ApiMisCallesLimpiasRD.Controllers
             return CustomJsonResult(listado_de_recibos_por_id);
         }
 
+
+
+        [HttpGet]
+        [Route("ConsultarListadodeDatosNecesariosAyunta")]
+
+        public JsonResult ConsultarListadodeDatosNecesariosAyunta(string usuario)
+        {
+            Models.DatosNecesarios datosnecesarios = new Models.DatosNecesarios();
+
+            List<Models.Entidad.EDatosNecesariosAyuntamientos> lista_de_datos_necesarios_ayunta = datosnecesarios.lista_de_datos_necesarios_ayunta(usuario);
+
+            return CustomJsonResult(lista_de_datos_necesarios_ayunta);
+        }
 
 
         //[HttpGet]
