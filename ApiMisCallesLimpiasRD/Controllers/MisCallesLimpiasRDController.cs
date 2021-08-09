@@ -77,11 +77,11 @@ namespace ApiMisCallesLimpiasRD.Controllers
         [HttpGet]
         [Route("ConsultarListadodeRecompensas")]
 
-        public JsonResult ConsultarListadodeRecompensas()
+        public JsonResult ConsultarListadodeRecompensas(int cod_ayuntamiento)
         {
             Models.Recompensas recompensas = new Models.Recompensas();
 
-            List<Models.Entidad.Erecompensas> lista_recompensas = recompensas.lista_recompensas();
+            List<Models.Entidad.Erecompensas> lista_recompensas = recompensas.lista_recompensas(cod_ayuntamiento);
 
             return CustomJsonResult(lista_recompensas);
         }

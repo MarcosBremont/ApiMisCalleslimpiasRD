@@ -11,7 +11,7 @@ namespace ApiMisCallesLimpiasRD.Models
 {
     public class Recompensas : Conexion
     {
-        public List<Models.Entidad.Erecompensas> lista_recompensas()
+        public List<Models.Entidad.Erecompensas> lista_recompensas(int cod_ayuntamiento)
         {
             List<Models.Entidad.Erecompensas> lista_recompensas = new List<Models.Entidad.Erecompensas>();
 
@@ -19,6 +19,10 @@ namespace ApiMisCallesLimpiasRD.Models
             MySqlCommand cmd = new MySqlCommand("SListaRecompensas", GetCon());
             MySqlDataAdapter da = new MySqlDataAdapter();
             da.SelectCommand = cmd;
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+            da.SelectCommand.Parameters.Add("prm_cod_ayuntamiento", MySqlDbType.Int32).Value = cod_ayuntamiento;
+
             da.Fill(dt);
 
             if (dt.Rows.Count > 0)
