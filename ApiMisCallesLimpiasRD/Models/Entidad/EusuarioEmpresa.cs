@@ -15,6 +15,8 @@ namespace ApiMisCallesLimpiasRD.Models.Entidad
         public string telefono_Usuario { get; set; } = "";
         public string respuesta { get; set; }
         public string mensaje { get; set; }
+        public int cod_ayuntamiento { get; set; } = 0;
+
         public int estado { get; set; } = 1;
   }
 }

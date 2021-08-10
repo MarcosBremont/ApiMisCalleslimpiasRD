@@ -105,6 +105,7 @@ namespace ApiMisCallesLimpiasRD.Models
 
             List<Models.Entidad.EDatosNecesariosAyuntamientos> lista_de_datos_necesarios_ayunta = new List<Models.Entidad.EDatosNecesariosAyuntamientos>();
 
+
             DataTable dt = new DataTable();
             MySqlDataAdapter da = new MySqlDataAdapter("SListaDatosNecesariosAyuntamientos", GetCon());
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
