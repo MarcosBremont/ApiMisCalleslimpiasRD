@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bremo\\Desktop\\GitCFG\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj": {}
+    "C:\\Users\\bremo\\Desktop\\GitCFG\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bremo\\Desktop\\GitCFG\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj": {
+    "C:\\Users\\bremo\\Desktop\\GitCFG\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bremo\\Desktop\\GitCFG\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
+        "projectUniqueName": "C:\\Users\\bremo\\Desktop\\GitCFG\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
         "projectName": "ApiMisCallesLimpiasRD",
-        "projectPath": "C:\\Users\\bremo\\Desktop\\GitCFG\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
+        "projectPath": "C:\\Users\\bremo\\Desktop\\GitCFG\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
         "packagesPath": "C:\\Users\\bremo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bremo\\Desktop\\GitCFG\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD\\obj\\",
+        "outputPath": "C:\\Users\\bremo\\Desktop\\GitCFG\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
