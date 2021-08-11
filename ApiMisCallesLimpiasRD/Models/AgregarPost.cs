@@ -11,7 +11,7 @@ namespace ApiMisCallesLimpiasRD.Models
 {
     public class AgregarPost : Conexion
     {
-        public Epost agregarPost( string titulo,string descripcion, string imagen)
+        public Epost agregarPost( string titulo,string descripcion, string imagen, int cod_ayuntamiento)
         {
             Epost resultado = new Epost();
             try
@@ -21,6 +21,7 @@ namespace ApiMisCallesLimpiasRD.Models
                 cmd.Parameters.Add("prm_titulo", MySqlDbType.String).Value = titulo;
                 cmd.Parameters.Add("prm_descripcion", MySqlDbType.String).Value = descripcion;                
                 cmd.Parameters.Add("prm_imagen", MySqlDbType.String).Value = imagen;
+                cmd.Parameters.Add("prm_cod_ayuntamiento", MySqlDbType.Int32).Value = cod_ayuntamiento;
 
                 Conectar();
                 cmd.ExecuteNonQuery();

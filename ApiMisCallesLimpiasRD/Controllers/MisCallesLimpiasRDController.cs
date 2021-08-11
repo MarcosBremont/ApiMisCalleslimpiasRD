@@ -89,7 +89,11 @@ namespace ApiMisCallesLimpiasRD.Controllers
         [HttpGet]
         [Route("ConsultarListadodePost")]
 
+<<<<<<< HEAD
         public JsonResult ConsultarListadodePost(int cod_ayuntamiento)
+=======
+        public JsonResult ConsultarListadodePost( int cod_ayuntamiento)
+>>>>>>> 126f2898e61da4b5341976d88a9eb7b4bde5915b
         {
             Models.Post post = new Models.Post();
 
@@ -448,10 +452,10 @@ namespace ApiMisCallesLimpiasRD.Controllers
 
         [HttpGet]
         [Route("AgregarRecompensa")]
-        public JsonResult agregar_Recompensa( string nombre,double puntos,  string imagen, string descripcion)
+        public JsonResult agregar_Recompensa( string nombre,double puntos,  string imagen, string descripcion, int cod_ayuntamiento)
         {
             Models.AgregarRecompensa agregarrecompensa = new Models.AgregarRecompensa();
-            return CustomJsonResult(agregarrecompensa.agregar_Recompensa(nombre, puntos, imagen, descripcion));
+            return CustomJsonResult(agregarrecompensa.agregar_Recompensa(nombre, puntos, imagen, descripcion, cod_ayuntamiento));
         }
 
 
@@ -549,10 +553,10 @@ namespace ApiMisCallesLimpiasRD.Controllers
 
         [HttpGet]
         [Route("AgregarPostEducacional")]
-        public JsonResult Agregar_Post(string titulo, string descripcion, string imagen)
+        public JsonResult Agregar_Post(string titulo, string descripcion, string imagen, int cod_ayuntamiento)
         {
             Models.AgregarPost agregarPost = new Models.AgregarPost();
-            return CustomJsonResult(agregarPost.agregarPost(titulo, descripcion, imagen));
+            return CustomJsonResult(agregarPost.agregarPost(titulo, descripcion, imagen, cod_ayuntamiento));
         }
 
         [HttpGet]

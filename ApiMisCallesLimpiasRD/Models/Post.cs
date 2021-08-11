@@ -11,12 +11,18 @@ namespace ApiMisCallesLimpiasRD.Models
 {
     public class Post : Conexion
     {
+<<<<<<< HEAD
         public List<Models.Entidad.Epost> lista_de_post(int cod_ayuntamiento)
+=======
+        public List<Models.Entidad.Epost> lista_de_post( int cod_ayuntamiento)
+>>>>>>> 126f2898e61da4b5341976d88a9eb7b4bde5915b
         {
             List<Models.Entidad.Epost> lista_de_post = new List<Models.Entidad.Epost>();
 
             DataTable dt = new DataTable();
             MySqlCommand cmd = new MySqlCommand("SListaDePost", GetCon());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("prm_cod_ayuntamiento", MySqlDbType.Int32).Value = cod_ayuntamiento;
             MySqlDataAdapter da = new MySqlDataAdapter();
             da.SelectCommand = cmd;
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
