@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\bremo\\Desktop\\GitCFG\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj": {}
   },
   "projects": {
@@ -13,27 +12,13 @@
         "projectPath": "C:\\Users\\bremo\\Desktop\\GitCFG\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
         "packagesPath": "C:\\Users\\bremo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\bremo\\Desktop\\GitCFG\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD\\obj\\",
-=======
-    "C:\\Users\\the_s\\OneDrive\\Escritorio\\Final\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\the_s\\OneDrive\\Escritorio\\Final\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\the_s\\OneDrive\\Escritorio\\Final\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
-        "projectName": "ApiMisCallesLimpiasRD",
-        "projectPath": "C:\\Users\\the_s\\OneDrive\\Escritorio\\Final\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\ApiMisCallesLimpiasRD.csproj",
-        "packagesPath": "C:\\Users\\the_s\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\the_s\\OneDrive\\Escritorio\\Final\\ApiMisCalleslimpiasRD\\ApiMisCallesLimpiasRD\\obj\\",
->>>>>>> 126f2898e61da4b5341976d88a9eb7b4bde5915b
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\the_s\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\bremo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -100,7 +85,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

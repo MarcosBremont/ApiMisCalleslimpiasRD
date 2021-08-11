@@ -89,11 +89,8 @@ namespace ApiMisCallesLimpiasRD.Controllers
         [HttpGet]
         [Route("ConsultarListadodePost")]
 
-<<<<<<< HEAD
-        public JsonResult ConsultarListadodePost(int cod_ayuntamiento)
-=======
         public JsonResult ConsultarListadodePost( int cod_ayuntamiento)
->>>>>>> 126f2898e61da4b5341976d88a9eb7b4bde5915b
+
         {
             Models.Post post = new Models.Post();
 
