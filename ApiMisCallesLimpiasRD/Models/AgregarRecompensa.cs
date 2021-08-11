@@ -11,7 +11,7 @@ namespace ApiMisCallesLimpiasRD.Models
 {
     public class AgregarRecompensa : Conexion
     {
-        public ERecompensa agregar_Recompensa( string nombre,double puntos, string imagen, string descripcion)
+        public ERecompensa agregar_Recompensa( string nombre,double puntos, string imagen, string descripcion, int cod_ayuntamiento)
         {
             ERecompensa resultado = new ERecompensa();
             try
@@ -22,6 +22,7 @@ namespace ApiMisCallesLimpiasRD.Models
                 cmd.Parameters.Add("prm_puntos", MySqlDbType.Double).Value = puntos;                
                 cmd.Parameters.Add("prm_imagen", MySqlDbType.Text).Value = imagen;
                 cmd.Parameters.Add("prm_descripcion", MySqlDbType.Text).Value = descripcion;
+                cmd.Parameters.Add("prm_cod_ayuntamiento", MySqlDbType.Int32).Value = cod_ayuntamiento;
 
                 Conectar();
                 cmd.ExecuteNonQuery();

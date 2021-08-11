@@ -446,10 +446,10 @@ namespace ApiMisCallesLimpiasRD.Controllers
 
         [HttpGet]
         [Route("AgregarRecompensa")]
-        public JsonResult agregar_Recompensa( string nombre,double puntos,  string imagen, string descripcion)
+        public JsonResult agregar_Recompensa( string nombre,double puntos,  string imagen, string descripcion, int cod_ayuntamiento)
         {
             Models.AgregarRecompensa agregarrecompensa = new Models.AgregarRecompensa();
-            return CustomJsonResult(agregarrecompensa.agregar_Recompensa(nombre, puntos, imagen, descripcion));
+            return CustomJsonResult(agregarrecompensa.agregar_Recompensa(nombre, puntos, imagen, descripcion, cod_ayuntamiento));
         }
 
 
