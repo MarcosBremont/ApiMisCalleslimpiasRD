@@ -51,6 +51,7 @@ namespace ApiMisCallesLimpiasRD.Models
         cmd.Parameters.Add("prm_lng", MySqlDbType.Text).Value = emisreportes.lng;
         cmd.Parameters.Add("prm_fotos", MySqlDbType.Text).Value = emisreportes.fotos;
         cmd.Parameters.Add("prm_cod_usuario", MySqlDbType.Int16).Value = emisreportes.cod_usuario;
+        cmd.Parameters.Add("prm_cod_ayuntamiento", MySqlDbType.Int16).Value = emisreportes.cod_ayuntamiento;
         MySqlDataAdapter da = new MySqlDataAdapter();
         da.SelectCommand = cmd;
         da.Fill(dt);

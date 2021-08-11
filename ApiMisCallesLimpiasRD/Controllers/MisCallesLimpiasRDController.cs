@@ -89,11 +89,11 @@ namespace ApiMisCallesLimpiasRD.Controllers
         [HttpGet]
         [Route("ConsultarListadodePost")]
 
-        public JsonResult ConsultarListadodePost()
+        public JsonResult ConsultarListadodePost(int cod_ayuntamiento)
         {
             Models.Post post = new Models.Post();
 
-            List<Models.Entidad.Epost> lista_de_post = post.lista_de_post();
+            List<Models.Entidad.Epost> lista_de_post = post.lista_de_post(cod_ayuntamiento);
             return CustomJsonResult(lista_de_post);
 
         }
@@ -242,13 +242,15 @@ namespace ApiMisCallesLimpiasRD.Controllers
 
         [HttpGet]
         [Route("RegistrarReporte")]
-        public JsonResult RegistrarReporte(string ubicacion, string lat, string lng, string fotos, int cod_usuario)
+        public JsonResult RegistrarReporte(string ubicacion, string lat, string lng, string fotos, int cod_usuario, int cod_ayuntamiento)
         {
             emisreportes.ubicacion = ubicacion;
             emisreportes.lat = lat;
             emisreportes.lng = lng;
             emisreportes.fotos = fotos;
             emisreportes.cod_usuario = cod_usuario;
+            emisreportes.cod_ayuntamiento = cod_ayuntamiento;
+
             Misreportes misreportes = new Misreportes();
             var response = misreportes.RegistrarReporte(emisreportes);
             return CustomJsonResult(response);
