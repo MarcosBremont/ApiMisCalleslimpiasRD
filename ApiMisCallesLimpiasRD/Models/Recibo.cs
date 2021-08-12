@@ -23,6 +23,8 @@ namespace ApiMisCallesLimpiasRD.Models
         cmd.CommandType = CommandType.StoredProcedure;
         cmd.Parameters.Add("prm_cod_usuario", MySqlDbType.Int32).Value = erecibo.cod_usuario;
         cmd.Parameters.Add("prm_cod_recompensa", MySqlDbType.Int32).Value = erecibo.cod_recompensa;
+        cmd.Parameters.Add("prm_cod_ayuntamiento", MySqlDbType.Int32).Value = erecibo.cod_ayuntamiento;
+
         MySqlDataAdapter da = new MySqlDataAdapter();
         da.SelectCommand = cmd;
         da.Fill(dt);

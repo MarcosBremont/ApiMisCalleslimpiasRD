@@ -220,11 +220,12 @@ namespace ApiMisCallesLimpiasRD.Controllers
 
         [HttpGet]
         [Route("RegistrarRecibos")]
-        public JsonResult RegistrarRecibos(int cod_usuario, int cod_recompensa)
+        public JsonResult RegistrarRecibos(int cod_usuario, int cod_recompensa, int cod_ayuntamiento)
         {
             ERecibo erecibo = new ERecibo();
             erecibo.cod_usuario = cod_usuario;
             erecibo.cod_recompensa = cod_recompensa;
+            erecibo.cod_ayuntamiento = cod_ayuntamiento;
             Recibo recibo1 = new Recibo();
             var response = recibo1.RegistrarRecibos(erecibo);
             return CustomJsonResult(response);

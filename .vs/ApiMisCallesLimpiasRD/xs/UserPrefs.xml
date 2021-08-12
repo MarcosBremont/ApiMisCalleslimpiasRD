@@ -1,15 +1,21 @@
 ﻿<Properties StartupConfiguration="{6F388FB1-CC9B-467F-A553-F277BBF7E2E5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ApiMisCallesLimpiasRD/Models/Entidad/Emisreportes.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ApiMisCallesLimpiasRD/Models/Recibo.cs">
     <Files>
-      <File FileName="ApiMisCallesLimpiasRD/Controllers/MisCallesLimpiasRDController.cs" Line="626" Column="1" />
-      <File FileName="ApiMisCallesLimpiasRD/Models/Entidad/Emisreportes.cs" Line="16" Column="32" />
-      <File FileName="ApiMisCallesLimpiasRD/Models/Entidad/EusuarioEmpresa.cs" Line="1" Column="1" />
+      <File FileName="ApiMisCallesLimpiasRD/Controllers/MisCallesLimpiasRDController.cs" Line="230" Column="49" />
+      <File FileName="ApiMisCallesLimpiasRD/Models/Entidad/ERecibo.cs" Line="14" Column="1" />
+      <File FileName="ApiMisCallesLimpiasRD/Models/Recibo.cs" Line="26" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ApiMisCallesLimpiasRD" expanded="True">
-            <Node name="ApiMisCallesLimpiasRD" selected="True" />
+            <Node name="ApiMisCallesLimpiasRD" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Entidad" expanded="True" />
+                <Node name="Recibo.cs" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
